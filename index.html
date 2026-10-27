@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DP-TE — PFAS 降解路径与毒性演变平台</title>
+<style>
+  :root {
+    --blue: #0B3D6B; --green: #43B02A; --teal: #00A6A6; --gray: #5B6770;
+    --bg: #F7FAFC; --line: #E2E8F0; --ink: #0F2A44; --red: #D32F2F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Source Han Sans SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  /* 顶部状态提示 */
+  .status-bar { display: none; padding: 10px 20px; text-align: center; font-size: 14px; font-weight: 500; }
+  .status-bar.error { display: block; background: #FFEBEE; color: var(--red); border-bottom: 1px solid #FFCDD2; }
+  .status-bar.success { display: block; background: #E8F5E9; color: #2E7D32; border-bottom: 1px solid #C8E6C9; }
+
+  /* 顶栏 */
+  .topbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 32px; background: #FFFFFF; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 60; }
+  .logo-link { display: flex; align-items: center; gap: 16px; text-decoration: none; color: inherit; }
+  .logo-svg { height: 38px; width: auto; }
+  .logo-divider { width: 1px; height: 34px; background-color: var(--line); margin: 0 4px; }
+  .logo-text-group { display: flex; flex-direction: column; justify-content: center; }
+  .logo-title { font-size: 15px; font-weight: 700; color: var(--blue); line-height: 1.2; letter-spacing: -0.2px; }
+  .logo-subtitle { font-size: 11.5px; font-weight: 500; color: var(--gray); margin-top: 3px; letter-spacing: 0.5px; }
+  .topnav { display: flex; gap: 24px; font-size: 14px; font-weight: 500; }
+  .topnav a { color: var(--gray); text-decoration: none; transition: color 0.2s; padding: 6px 12px; border-radius: 8px; }
+  .topnav a:hover, .topnav a.active { color: var(--blue); background: #F0F7FA; font-weight: 700; }
+
+  /* 首页 */
+  #view-home { display: block; animation: fadeIn 0.4s ease; }
+  .hero { max-width: 860px; margin: 0 auto; padding: 80px 24px 60px; text-align: center; }
+  .hero h1 { font-size: 42px; line-height: 1.2; letter-spacing: -1px; color: var(--blue); margin-bottom: 20px; }
+  .hero p { font-size: 16px; line-height: 1.8; color: var(--gray); max-width: 640px; margin: 0 auto 40px; }
+  .cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 16px 36px; background: var(--blue); color: #FFFFFF; text-decoration: none; border-radius: 12px; font-size: 16px; font-weight: 600; transition: all 0.2s ease; box-shadow: 0 4px 14px rgba(11,61,107,0.2); }
+  .cta-btn:hover { background: #0E4C86; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(11,61,107,0.3); }
+  .features { max-width: 1000px; margin: 0 auto; padding: 0 24px 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .feature-card { background: #FFFFFF; border: 1px solid var(--line); border-radius: 16px; padding: 28px; }
+  .feature-card h3 { font-size: 16px; color: var(--blue); margin-bottom: 12px; }
+  .feature-card p { font-size: 14px; color: var(--gray); line-height: 1.6; }
+
+  /* 工具页 */
+  #view-tool { display: none; animation: fadeIn 0.4s ease; }
+  .tool-header { max-width: 800px; margin: 0 auto; padding: 40px 24px 20px; text-align: center; }
+  .tool-header h1 { font-size: 32px; color: var(--blue); margin-bottom: 12px; }
+  .tool-header p { color: var(--gray); font-size: 15px; }
+  .search-container { max-width: 660px; margin: 30px auto 0; position: relative; }
+  .search-container input { width: 100%; height: 60px; padding: 0 140px 0 24px; font-size: 16px; border: 1.5px solid var(--line); border-radius: 16px; background: #FFF; outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+  .search-container input:focus { border-color: var(--teal); box-shadow: 0 0 0 4px rgba(0,166,166,0.1); }
+  .search-container button { position: absolute; right: 8px; top: 8px; height: 44px; padding: 0 28px; background: var(--blue); color: #FFF; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; }
+  
+  /* 搜索建议下拉 */
+  .suggest-list { position: absolute; top: 68px; left: 0; right: 0; background: #FFF; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); z-index: 50; list-style: none; }
+  .suggest-list li { padding: 12px 20px; display: flex; flex-direction: column; gap: 4px; cursor: pointer; border-bottom: 1px solid #F0F4F8; }
+  .suggest-list li:last-child { border-bottom: none; }
+  .suggest-list li:hover { background: #F0F7FA; }
+  .suggest-list li .s-title { font-weight: 600; font-size: 13px; color: var(--ink); font-family: monospace; word-break: break-all; }
+  .suggest-list li .s-sub { font-size: 12px; color: var(--gray); }
+
+  /* 结果区 */
+  .result-container { max-width: 1200px; margin: 0 auto; padding: 20px 24px 80px; }
+  .card { background: #FFF; border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-bottom: 24px; }
+  .info-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .info-item .label { font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .info-item .value { font-size: 14px; font-weight: 600; color: var(--blue); word-break: break-all; font-family: monospace; }
+  .smiles-row { margin-top: 24px; padding-top: 20px; border-top: 1px solid #F0F4F8; }
+  .card-title { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 20px; }
+  .chart-wrapper { width: 100%; overflow-x: auto; background: #FAFBFC; border-radius: 12px; border: 1px solid var(--line); }
+  .chart-wrapper svg { display: block; min-width: 100%; }
+  .disclaimer { font-size: 12px; color: var(--gray); line-height: 1.8; padding: 20px; background: #F8FAFC; border-radius: 12px; margin-top: 24px; border: 1px solid var(--line); }
+  
+  .loading { text-align: center; padding: 60px; color: var(--gray); }
+  .spinner { width: 30px; height: 30px; border: 3px solid var(--line); border-top-color: var(--teal); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  [hidden] { display: none !important; }
+
+  @media (max-width: 900px) { .features { grid-template-columns: 1fr; } .info-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 720px) { .logo-text-group, .logo-divider { display: none; } .topbar { padding: 12px 20px; } }
+</style>
+</head>
+<body>
+
+<div id="status-bar" class="status-bar"></div>
+
+<header class="topbar">
+  <a href="#/" class="logo-link">
+    <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 110">
+      <g>
+        <g stroke="#0B0B0B" stroke-width="4" stroke-linecap="round">
+          <line x1="25" y1="25" x2="55" y2="25"/><line x1="55" y1="25" x2="85" y2="25"/><line x1="25" y1="25" x2="25" y2="85"/>
+          <line x1="25" y1="25" x2="55" y2="55"/><line x1="85" y1="25" x2="55" y2="55"/><line x1="25" y1="85" x2="55" y2="55"/><line x1="55" y1="55" x2="55" y2="85"/>
+        </g>
+        <g fill="#0B0B0B">
+          <circle cx="25" cy="25" r="10"/><circle cx="55" cy="25" r="10"/><circle cx="85" cy="25" r="10"/>
+          <circle cx="55" cy="55" r="10"/><circle cx="25" cy="85" r="10"/><circle cx="55" cy="85" r="10"/>
+        </g>
+      </g>
+      <text x="130" y="82" font-family="Inter, sans-serif" font-size="72" font-weight="600" letter-spacing="2">
+        <tspan fill="#0B3D6B">DP</tspan><tspan fill="#5B6770">-</tspan><tspan fill="#43B02A">TE</tspan>
+      </text>
+    </svg>
+    <div class="logo-divider"></div>
+    <div class="logo-text-group">
+      <div class="logo-title">Degradation Pathway & Toxicity Evolution</div>
+      <div class="logo-subtitle">降解路径与毒性演变预测平台</div>
+    </div>
+  </a>
+  <nav class="topnav">
+    <a href="#/" data-nav="home">首页</a>
+    <a href="#/tool" data-nav="tool">预测工具</a>
+  </nav>
+</header>
+
+<main>
+  <section id="view-home">
+    <div class="hero">
+      <h1>PFAS 降解路径与毒性演变</h1>
+      <p>整合公开文献中的 PFAS 降解网络，结合 <strong>ECOSAR 类筛查级毒性估算</strong>，提供链缩短路径、急性毒性变化与迁移性演变的可视化预测。</p>
+      <a href="#/tool" class="cta-btn">进入预测工具 <span>→</span></a>
+    </div>
+    <div class="features">
+      <div class="feature-card"><h3>网络拓扑解析</h3><p>基于真实文献数据，呈现母体污染物到短链产物的分叉与汇合降解网络。</p></div>
+      <div class="feature-card"><h3>毒性趋势追踪</h3><p>按降解阶段聚合毒性指数，预警毒性反弹的中间产物。</p></div>
+      <div class="feature-card"><h3>迁移性评估</h3><p>短链 PFAS 急性毒性降低但迁移性升高，系统同步标注环境风险。</p></div>
+    </div>
+  </section>
+
+  <section id="view-tool">
+    <div class="tool-header">
+      <h1>输入污染物进行预测</h1>
+      <p>支持输入 SMILES 字符串或物质 ID</p>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="例如：CC(=O)C(F)(F)... 或 p_000" autocomplete="off">
+        <button id="search-btn">预测</button>
+        <ul class="suggest-list" id="suggest-list" hidden></ul>
+      </div>
+    </div>
+    <div class="result-container" id="result-container" hidden></div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+let INDEX_DATA = [];
+
+function setStatus(type, msg) {
+  const bar = $('#status-bar');
+  if (!msg) { bar.style.display = 'none'; return; }
+  bar.className = `status-bar ${type}`;
+  bar.textContent = msg;
+  bar.style.display = 'block';
+}
+
+// 1. 加载索引
+async function loadIndex() {
+  try {
+    // 兼容加载 search_index.json
+    const res = await fetch('./search_index.json');
+    if (!res.ok) throw new Error(`HTTP 状态码: ${res.status}`);
+    const rawData = await res.json();
+    
+    if (Array.isArray(rawData)) {
+      INDEX_DATA = rawData;
+    } else if (typeof rawData === 'object' && rawData !== null) {
+      INDEX_DATA = Object.values(rawData);
+    } else {
+      throw new Error('无法识别的 JSON 格式');
+    }
+
+    if (INDEX_DATA.length === 0) throw new Error('数据库为空');
+    
+    setStatus('success', `✅ 数据库加载成功，共包含 ${INDEX_DATA.length} 种物质。`);
+    setTimeout(() => setStatus('none'), 3000);
+  } catch (err) {
+    console.error(err);
+    setStatus('error', `❌ 数据加载失败：${err.message}`);
+  }
+}
+
+// 2. 搜索建议
+function showSuggestions(query) {
+  const listEl = $('#suggest-list');
+  const q = query.trim().toLowerCase();
+  if (!q) { listEl.hidden = true; return; }
+  
+  if (INDEX_DATA.length === 0) {
+     listEl.innerHTML = `<li><div class="s-title" style="color:var(--red)">数据尚未加载完成</div></li>`;
+     listEl.hidden = false;
+     return;
+  }
+
+  try {
+    const matches = INDEX_DATA.filter(item => {
+      return (item.smiles && item.smiles.toLowerCase().includes(q)) || 
+             (item.id && item.id.toLowerCase().includes(q));
+    }).slice(0, 10);
+
+    if (matches.length === 0) { listEl.hidden = true; return; }
+
+    listEl.innerHTML = matches.map(item => `
+      <li data-id="${item.id}">
+        <div class="s-title">${item.smiles || '无 SMILES'}</div>
+        <div class="s-sub">ID: ${item.id} | 类别: ${item.type || item.parent_type || '未知'}</div>
+      </li>
+    `).join('');
+    listEl.hidden = false;
+
+    listEl.querySelectorAll('li').forEach(li => {
+      li.addEventListener('click', () => {
+        $('#suggest-list').hidden = true;
+        $('#search-input').value = '';
+        fetchDetail(li.dataset.id);
+      });
+    });
+  } catch (e) {
+     console.error("搜索出错:", e);
+  }
+}
+
+// 3. 按需加载详情
+async function fetchDetail(id) {
+  const container = $('#result-container');
+  container.hidden = false;
+  container.innerHTML = `<div class="loading"><div class="spinner"></div>正在提取该物质的降解路径与毒性数据...</div>`;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  try {
+    // 强制刷新缓存
+    const res = await fetch(`./data/${id}.json?t=${new Date().getTime()}`);
+    if (!res.ok) throw new Error(`找不到文件 data/${id}.json`);
+    const comp = await res.json();
+    renderResult(comp);
+  } catch (err) {
+    console.error(err);
+    container.innerHTML = `<div class="card" style="text-align:center; color:#B8630D;">❌ 未能加载详情数据：${err.message}</div>`;
+  }
+}
+
+// 4. 点击预测按钮
+function predict() {
+  const q = $('#search-input').value.trim();
+  if (!q) { alert("请输入 SMILES 或 ID"); return; }
+  $('#suggest-list').hidden = true;
+  
+  if (INDEX_DATA.length === 0) {
+    $('#result-container').hidden = false;
+    $('#result-container').innerHTML = `<div class="card" style="text-align:center; color:var(--red); padding:40px;">数据库尚未加载成功。</div>`;
+    return;
+  }
+
+  try {
+    const match = INDEX_DATA.find(item => {
+      return (item.smiles && item.smiles.toLowerCase() === q.toLowerCase()) || 
+             (item.id && item.id.toLowerCase() === q.toLowerCase());
+    });
+
+    if (match) {
+      fetchDetail(match.id);
+    } else {
+      $('#result-container').hidden = false;
+      $('#result-container').innerHTML = `<div class="card" style="text-align:center; color:#5B6770; padding:40px;">未找到完全匹配该输入的物质，请检查拼写或点击下拉建议。</div>`;
+    }
+  } catch(e) {
+    console.error("预测出错:", e);
+  }
+}
+
+/* ================= 渲染逻辑 ================= */
+// 专为你的真实数据设计的拓扑图渲染（BFS 裁剪算法）
+function renderGraphLayout(comp) {
+  const { nodes, edges, meta } = comp;
+  
+  // 找到原物质索引
+  let startIdx = nodes.findIndex(n => n === meta.smiles);
+  if (startIdx === -1) startIdx = 0; // 兜底
+
+  // 构建邻接表
+  const adj = {};
+  nodes.forEach((_, i) => adj[i] = []);
+  edges.forEach(e => {
+    if (adj[e[0]]) adj[e[0]].push({ to: e[1], rxn: e[2] });
+  });
+
+  // BFS 截取前 25 个节点进行可视化，防止 SVG 爆炸卡死
+  const queue = [{ idx: startIdx, level: 0 }];
+  const visited = new Set([startIdx]);
+  const nodesToRender = [];
+  const edgesToRender = [];
+  const levelCounts = {};
+
+  while(queue.length > 0 && nodesToRender.length < 25) {
+    const curr = queue.shift();
+    
+    if (!levelCounts[curr.level]) levelCounts[curr.level] = 0;
+    const row = levelCounts[curr.level]++;
+    
+    nodesToRender.push({ 
+      idx: curr.idx, 
+      level: curr.level, 
+      row: row,
+      smiles: nodes[curr.idx] 
+    });
+    
+    const children = adj[curr.idx] || [];
+    // 限制每个节点最多延伸 2 个子节点，保持图形干净
+    for (let i = 0; i < Math.min(children.length, 2); i++) {
+      const child = children[i];
+      if (!visited.has(child.to) && nodesToRender.length + queue.length < 25) {
+        visited.add(child.to);
+        queue.push({ idx: child.to, level: curr.level + 1 });
+        edgesToRender.push({ from: curr.idx, to: child.to, rxn: child.rxn });
+      }
+    }
+  }
+
+  const NODE_W = 140, NODE_H = 46, COL = 190, ROW = 80;
+  const maxLevel = Math.max(...nodesToRender.map(n => n.level));
+  const maxRow = Math.max(...Object.values(levelCounts));
+  
+  const width = 60 + (maxLevel + 1) * COL;
+  const height = 60 + maxRow * ROW;
+  
+  const pos = {};
+  nodesToRender.forEach(n => {
+    pos[n.idx] = { 
+      x: 30 + n.level * COL, 
+      y: 30 + n.row * ROW 
+    };
+  });
+
+  let edgesSvg = '';
+  edgesToRender.forEach(e => {
+    const p = pos[e.from], q = pos[e.to];
+    if (!p || !q) return;
+    const x1 = p.x + NODE_W, y1 = p.y + NODE_H / 2;
+    const x2 = q.x, y2 = q.y + NODE_H / 2;
+    const mx = (x1 + x2) / 2;
+    
+    // 连线
+    edgesSvg += `<path d="M${x1} ${y1} C ${mx} ${y1}, ${mx} ${y2}, ${x2} ${y2}" fill="none" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrow)"/>`;
+    
+    // 线上标注反应名称
+    if (e.rxn) {
+      edgesSvg += `
+        <rect x="${mx - 45}" y="${y1 - 12}" width="90" height="20" rx="4" fill="#F8FAFC" stroke="#E2E8F0" />
+        <text x="${mx}" y="${y1 + 2}" font-size="10" fill="#5B6770" text-anchor="middle">${e.rxn}</text>
+      `;
+    }
+  });
+
+  let nodesSvg = '';
+  nodesToRender.forEach(n => {
+    const p = pos[n.idx];
+    const isParent = n.idx === startIdx;
+    const color = isParent ? '#0B3D6B' : '#43B02A';
+    const bg = isParent ? '#F0F7FA' : '#FFFFFF';
+    
+    // 截断过长的SMILES
+    const shortSmiles = n.smiles.length > 14 ? n.smiles.substring(0, 14) + '...' : n.smiles;
+    
+    nodesSvg += `
+      <g>
+        <rect x="${p.x}" y="${p.y}" width="${NODE_W}" height="${NODE_H}" rx="8" fill="${bg}" stroke="${color}" stroke-width="2"/>
+        <circle cx="${p.x + 12}" cy="${p.y + 16}" r="4" fill="${color}"/>
+        <text x="${p.x + 22}" y="${p.y + 20}" font-size="12" font-weight="600" fill="#0F2A44">${isParent ? '母体' : '产物'}</text>
+        <text x="${p.x + 12}" y="${p.y + 36}" font-size="11" fill="#5B6770" font-family="monospace">${shortSmiles}</text>
+      </g>
+    `;
+  });
+
+  return `
+  <svg viewBox="0 0 ${width} ${height}" style="min-width:${Math.min(width, 900)}px">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="#CBD5E1"/>
+      </marker>
+    </defs>
+    ${edgesSvg}
+    ${nodesSvg}
+  </svg>`;
+}
+
+// 针对旧版数据的曲线渲染
+function renderToxCurve(comp) {
+  const W = 600, H = 260, PL = 40, PR = 20, PT = 20, PB = 40;
+  const pw = W - PL - PR, ph = H - PT - PB;
+  const maxLevel = Math.max(...comp.steps.map(s => s.level));
+  const pts = [];
+  for (let l = 0; l <= maxLevel; l++) {
+    const arr = comp.steps.filter(s => s.level === l);
+    if (arr.length) pts.push({ level: l, tox: arr.reduce((a, b) => a + (b.tox||0), 0) / arr.length, chain: arr[0].chain || '' });
+  }
+  if(pts.length === 0) return '';
+  
+  const n = pts.length;
+  const X = i => PL + (n <= 1 ? pw / 2 : i * pw / (n - 1));
+  const Y = v => PT + (1 - v / 100) * ph;
+  let grid = '';
+  [0, 25, 50, 75, 100].forEach(v => {
+    grid += `<line x1="${PL}" y1="${Y(v)}" x2="${PL + pw}" y2="${Y(v)}" stroke="#EDF2F7" stroke-width="1"/>`;
+    grid += `<text x="${PL - 10}" y="${Y(v) + 4}" font-size="11" fill="#94A3B8" text-anchor="end">${v}</text>`;
+  });
+  const linePts = pts.map((p, i) => `${X(i)},${Y(p.tox)}`).join(' ');
+  let dots = '', xLabels = '';
+  pts.forEach((p, i) => {
+    dots += `<circle cx="${X(i)}" cy="${Y(p.tox)}" r="5" fill="#FFF" stroke="#43B02A" stroke-width="3"/><text x="${X(i)}" y="${Y(p.tox) - 12}" font-size="12" font-weight="600" fill="#0F2A44" text-anchor="middle">${Math.round(p.tox)}</text>`;
+    xLabels += `<text x="${X(i)}" y="${PT + ph + 24}" font-size="12" fill="#5B6770" text-anchor="middle">${p.chain || '阶段'+i}</text>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%">${grid}<polyline points="${linePts}" fill="none" stroke="#0B3D6B" stroke-width="2.5" stroke-linejoin="round"/>${dots}${xLabels}</svg>`;
+}
+
+function renderResult(comp) {
+  let html = '';
+
+  // 区分真实数据与旧数据
+  if (comp.nodes && comp.meta) {
+    // === 真实 p_000 数据格式 ===
+    const meta = comp.meta;
+    html += `
+      <div class="card">
+        <div class="info-grid">
+          <div class="info-item"><div class="label">物质 ID</div><div class="value">${meta.id}</div></div>
+          <div class="info-item"><div class="label">污染物类型</div><div class="value">${meta.parent_type || '-'}</div></div>
+          <div class="info-item"><div class="label">高风险路径数</div><div class="value" style="color:var(--red)">${meta.risky_paths}</div></div>
+          <div class="info-item"><div class="label">最大毒性放大倍数</div><div class="value" style="color:var(--red)">${meta.max_amplification ? meta.max_amplification.toFixed(2) : '-'}x</div></div>
+        </div>
+        <div class="smiles-row">
+          <div class="label">SMILES</div>
+          <div class="value" style="font-size: 13px; color: #5B6770;">${meta.smiles}</div>
+        </div>
+        <div class="smiles-row" style="border:none; margin-top:10px; padding-top:0;">
+          <div class="label">主要峰值反应</div>
+          <div class="value" style="font-size: 13px; color: var(--teal);">${meta.primary_peak_rxn}</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-title">降解路径网络 (BFS 截取核心 25 个节点)</div>
+        <div class="chart-wrapper">${renderGraphLayout(comp)}</div>
+        <div class="disclaimer">
+          <strong>注：</strong> 原始网络包含 ${comp.nodes.length} 个节点与 ${comp.edges.length} 条连线。为保障浏览器流畅渲染，已自动截取从母体延伸的前 3 层转化网络。
+        </div>
+      </div>
+    `;
+  } else {
+    // === 旧版 steps 格式 (兼容保留) ===
+    html += `
+      <div class="card">
+        <div class="info-grid">
+          <div class="info-item"><div class="label">名称</div><div class="value">${comp.name || '-'}</div></div>
+          <div class="info-item"><div class="label">中文名</div><div class="value">${comp.cn || '-'}</div></div>
+          <div class="info-item"><div class="label">CAS 号</div><div class="value">${comp.cas || '-'}</div></div>
+          <div class="info-item"><div class="label">分子式</div><div class="value">${comp.formula || '-'}</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">毒性变化趋势</div>
+        ${renderToxCurve(comp)}
+      </div>
+    `;
+  }
+
+  $('#result-container').innerHTML = html;
+}
+
+/* 事件绑定 */
+window.addEventListener('hashchange', () => {
+  const isTool = location.hash === '#/tool';
+  $('#view-home').style.display = isTool ? 'none' : 'block';
+  $('#view-tool').style.display = isTool ? 'block' : 'none';
+  document.querySelectorAll('.topnav a').forEach(a => a.classList.toggle('active', a.dataset.nav === (isTool ? 'tool' : 'home')));
+});
+
+$('#search-input').addEventListener('input', e => showSuggestions(e.target.value));
+$('#search-input').addEventListener('keydown', e => { if (e.key === 'Enter') predict(); });
+$('#search-btn').addEventListener('click', predict);
+document.addEventListener('click', e => { 
+  if (!e.target.closest('.search-container')) {
+    const list = $('#suggest-list');
+    if(list) list.hidden = true;
+  } 
+});
+
+loadIndex();
+</script>
+</body>
+</html>
