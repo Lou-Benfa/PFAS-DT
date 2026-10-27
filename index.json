@@ -1,0 +1,3370 @@
+[
+  {
+    "id": "p_000",
+    "smiles": "CC(=O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 22.018958922334942
+  },
+  {
+    "id": "p_001",
+    "smiles": "FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_002",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.1252693136349645
+  },
+  {
+    "id": "p_003",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_004",
+    "smiles": "NCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_005",
+    "smiles": "FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_006",
+    "smiles": "O=S(OCC(F)(F)F)OCC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 2.06600300013637
+  },
+  {
+    "id": "p_007",
+    "smiles": "CN(C(=O)C(F)(F)C(F)(F)C(F)(F)F)C(=O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_008",
+    "smiles": "FC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_009",
+    "smiles": "O=C(O)C(O)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_010",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(=O)O",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_011",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_012",
+    "smiles": "O=C(O)CCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTCA/FTUCA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 23.42495636998255
+  },
+  {
+    "id": "p_013",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.3411003236245955
+  },
+  {
+    "id": "p_014",
+    "smiles": "O=C(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_015",
+    "smiles": "FC(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)CC1CO1",
+    "parent_type": "Other",
+    "risky_paths": 36,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 3.4215328467153285
+  },
+  {
+    "id": "p_016",
+    "smiles": "O=C(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_017",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.8750374587953251
+  },
+  {
+    "id": "p_018",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 8.284979801689312
+  },
+  {
+    "id": "p_019",
+    "smiles": "OCCC(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 72.19047619047618
+  },
+  {
+    "id": "p_020",
+    "smiles": "O=S(=O)(OCCOC(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "sulfonate_to_carboxylate",
+    "max_amplification": 27.88067122436296
+  },
+  {
+    "id": "p_021",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_022",
+    "smiles": "CC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.7557420494699647
+  },
+  {
+    "id": "p_023",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_024",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_025",
+    "smiles": "O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 6.855855855855856
+  },
+  {
+    "id": "p_026",
+    "smiles": "NC(=O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 998,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 7.222146461202782
+  },
+  {
+    "id": "p_027",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 73.31571994715983
+  },
+  {
+    "id": "p_028",
+    "smiles": "O=C(Cl)C(F)(F)C(F)(F)C(F)(F)C(=O)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "halogen_reduction",
+    "max_amplification": 7.109608540925267
+  },
+  {
+    "id": "p_029",
+    "smiles": "FC(F)=C(F)OC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 12.754054948692485
+  },
+  {
+    "id": "p_030",
+    "smiles": "CN(C)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.9765153919390666
+  },
+  {
+    "id": "p_031",
+    "smiles": "CCOC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_032",
+    "smiles": "COC(=O)C(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_033",
+    "smiles": "FC(F)OCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.714285714285714
+  },
+  {
+    "id": "p_034",
+    "smiles": "OCC(F)(F)C(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 95.81881533101046
+  },
+  {
+    "id": "p_035",
+    "smiles": "*C(F)(F)F.*F.*F.FC1C(F)C(F)(F)C(F)(F)C2(F)C1C(F)(F)C(F)(F)C(F)(F)C2(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_036",
+    "smiles": "O=C([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[K+]",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_037",
+    "smiles": "NCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.1964991530208922
+  },
+  {
+    "id": "p_038",
+    "smiles": "O=CC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 999,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_039",
+    "smiles": "O=C(NC(=O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_040",
+    "smiles": "OC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_041",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_042",
+    "smiles": "O=C(O)C(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_043",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_044",
+    "smiles": "C=CCOC(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 108,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_045",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 999,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_046",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)CC1CO1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_047",
+    "smiles": "O=C(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(=O)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "halogen_reduction",
+    "max_amplification": 3.181494661921708
+  },
+  {
+    "id": "p_048",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(=O)O",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_049",
+    "smiles": "FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.049922871967466
+  },
+  {
+    "id": "p_050",
+    "smiles": "FC1(F)C=CC(F)(F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 2,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 1.2464929859719438
+  },
+  {
+    "id": "p_051",
+    "smiles": "CC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 33.66895874263261
+  },
+  {
+    "id": "p_052",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_053",
+    "smiles": "OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 11.905344044708349
+  },
+  {
+    "id": "p_054",
+    "smiles": "O=S(=O)(OCC(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_055",
+    "smiles": "*C(F)(F)F.*F.*F.FC1C(F)C(F)(F)C1C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_056",
+    "smiles": "O=C(OC(=O)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.0609318996415773
+  },
+  {
+    "id": "p_057",
+    "smiles": "C=CC(=O)OC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_058",
+    "smiles": "O=C(O)CC(O)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "ketone_reduction",
+    "max_amplification": 202.7813546227144
+  },
+  {
+    "id": "p_059",
+    "smiles": "C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C=C",
+    "parent_type": "Other",
+    "risky_paths": 217,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_060",
+    "smiles": "FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_061",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_062",
+    "smiles": "CC(C)(O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.604878048780488
+  },
+  {
+    "id": "p_063",
+    "smiles": "O=CC(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_064",
+    "smiles": "C=C(Br)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_065",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.0601928832723644
+  },
+  {
+    "id": "p_066",
+    "smiles": "FC(C(F)(F)F)C(F)(F)OCC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_067",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(I)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_068",
+    "smiles": "COCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.058852378616969
+  },
+  {
+    "id": "p_069",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CCS",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_070",
+    "smiles": "O=S(=O)(OCC(F)(F)C(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 2.552643893308376
+  },
+  {
+    "id": "p_071",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_072",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.4519874944171507
+  },
+  {
+    "id": "p_073",
+    "smiles": "NC(=O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 999,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 61.85770750988142
+  },
+  {
+    "id": "p_074",
+    "smiles": "CCOC(F)(F)C(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.978348035284683
+  },
+  {
+    "id": "p_075",
+    "smiles": "FC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C1(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_076",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 32.31514878268711
+  },
+  {
+    "id": "p_077",
+    "smiles": "FC(F)(F)C1(F)C(F)(F)C(F)(F)C1(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_078",
+    "smiles": "COC(F)(C(F)(F)C(F)(F)F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_079",
+    "smiles": "O=C(O)C=C(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 42,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 14.887376818395122
+  },
+  {
+    "id": "p_080",
+    "smiles": "OCC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 20.05701254275941
+  },
+  {
+    "id": "p_081",
+    "smiles": "FC(F)(I)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_082",
+    "smiles": "FC(F)(F)CNCC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.400977995110025
+  },
+  {
+    "id": "p_083",
+    "smiles": "O=C(OCC(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_084",
+    "smiles": "FC(F)=C(F)OC(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.8455703883495145
+  },
+  {
+    "id": "p_085",
+    "smiles": "FC(F)(F)C(F)(F)c1nc(C(F)(F)C(F)(F)F)nc(C(F)(F)C(F)(F)F)n1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_086",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_087",
+    "smiles": "O=C(NC(=O)c1c(F)cccc1F)Nc1cc(Cl)c(OC(F)(F)C(F)F)c(Cl)c1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "amide_hydrolysis",
+    "max_amplification": 3.66844512195122
+  },
+  {
+    "id": "p_088",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_089",
+    "smiles": "Cc1ccc(S(=O)(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F)cc1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_090",
+    "smiles": "O=S(=O)([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[K+]",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 25.487522160098187
+  },
+  {
+    "id": "p_091",
+    "smiles": "O=S(=O)(OCC(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_092",
+    "smiles": "FC(F)OC(F)(F)C(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.3776052308949733
+  },
+  {
+    "id": "p_093",
+    "smiles": "OCC(O)CC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 73.16753926701571
+  },
+  {
+    "id": "p_094",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_095",
+    "smiles": "N=C(N)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 15,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 2.476397966594045
+  },
+  {
+    "id": "p_096",
+    "smiles": "FC(F)(F)COC(OCC(F)(F)F)OCC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_097",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CO",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.966971605084947
+  },
+  {
+    "id": "p_098",
+    "smiles": "O=S1(=O)NS(=O)(=O)C(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_099",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_100",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)CO",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 73.2753938077132
+  },
+  {
+    "id": "p_101",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.967455621301775
+  },
+  {
+    "id": "p_102",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)C(F)(F)C(=O)OCC",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.050906776964683
+  },
+  {
+    "id": "p_103",
+    "smiles": "C=C(F)C(=O)OC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_104",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_105",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 1.5585964912280703
+  },
+  {
+    "id": "p_106",
+    "smiles": "FC(C(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_107",
+    "smiles": "CC(O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 8.757691668052553
+  },
+  {
+    "id": "p_108",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CC1CO1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_acid",
+    "max_amplification": 5.961065115238308
+  },
+  {
+    "id": "p_109",
+    "smiles": "O=C(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_110",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_111",
+    "smiles": "FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_112",
+    "smiles": "N=C(N)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 32,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 1.4751131221719458
+  },
+  {
+    "id": "p_113",
+    "smiles": "O=S(=O)(OC(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_114",
+    "smiles": "OCCCC(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 39.19253261358524
+  },
+  {
+    "id": "p_115",
+    "smiles": "FC(F)C(F)(F)CI",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.646341463414634
+  },
+  {
+    "id": "p_116",
+    "smiles": "O=C(C(F)C(=O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 214,
+    "primary_peak_rxn": "dehydrofluorination",
+    "max_amplification": 4.906187624750499
+  },
+  {
+    "id": "p_117",
+    "smiles": "C=CC(=O)OCC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_118",
+    "smiles": "O=C(O)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_119",
+    "smiles": "O=C(O)C=CC(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 764,
+    "primary_peak_rxn": "beta_oxidation",
+    "max_amplification": 239.05084745762716
+  },
+  {
+    "id": "p_120",
+    "smiles": "C=CCOC(F)(F)C(F)(F)S(=O)(=O)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_121",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_122",
+    "smiles": "O=C(O)CSC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.4021896302416854
+  },
+  {
+    "id": "p_123",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(=O)O",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_124",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_125",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)CI",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_126",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 76.6955266955267
+  },
+  {
+    "id": "p_127",
+    "smiles": "OCC(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 124.11242603550296
+  },
+  {
+    "id": "p_128",
+    "smiles": "C=CC(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_129",
+    "smiles": "COC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_130",
+    "smiles": "O=C(C(F)(C(F)(F)F)C(F)(F)F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 147,
+    "primary_peak_rxn": "dehydrofluorination",
+    "max_amplification": 37.33657078819574
+  },
+  {
+    "id": "p_131",
+    "smiles": "O=C(C(F)(F)C(F)(F)F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 20.930232558139533
+  },
+  {
+    "id": "p_132",
+    "smiles": "O=C([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[Na+]",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_133",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)CCS",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_134",
+    "smiles": "CC(O)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 20.779220779220783
+  },
+  {
+    "id": "p_135",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(=O)O",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_136",
+    "smiles": "O=C(F)C(F)(F)C(F)(F)C(F)(F)C(=O)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 28.860391327340032
+  },
+  {
+    "id": "p_137",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_138",
+    "smiles": "O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_139",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_140",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CO",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_141",
+    "smiles": "CC(C(=O)F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "beta_oxidation",
+    "max_amplification": 9.355400696864113
+  },
+  {
+    "id": "p_142",
+    "smiles": "C=CC(F)(C(F)(F)F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_143",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.1305781716994745
+  },
+  {
+    "id": "p_144",
+    "smiles": "COC(=O)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_145",
+    "smiles": "O=S(=O)(F)OC(F)(F)C(F)=C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 3,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_146",
+    "smiles": "C=C(C)C(=O)OCCC(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_147",
+    "smiles": "O=C(OCC(F)(F)C(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_148",
+    "smiles": "FC(C(F)(F)F)C(F)(F)OCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_149",
+    "smiles": "FC(F)(F)C(F)(F)CNCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_150",
+    "smiles": "OCCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 46.46007940008823
+  },
+  {
+    "id": "p_151",
+    "smiles": "O=C(O)C(F)=C(F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 139.53042644944898
+  },
+  {
+    "id": "p_152",
+    "smiles": "COC(F)(F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_153",
+    "smiles": "FC(F)(F)COCC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.511978704525288
+  },
+  {
+    "id": "p_154",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_155",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_156",
+    "smiles": "FC(F)(F)C(F)(F)CI",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.0009861932938855
+  },
+  {
+    "id": "p_157",
+    "smiles": "FC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_158",
+    "smiles": "FC(F)(F)C(F)(I)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_159",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_160",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_161",
+    "smiles": "OC(C(F)(F)F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_162",
+    "smiles": "CC(F)(F)CC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.919616519174041
+  },
+  {
+    "id": "p_163",
+    "smiles": "FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_164",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_165",
+    "smiles": "FC1CC(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 30,
+    "primary_peak_rxn": "dehydrofluorination",
+    "max_amplification": 1.4327433628318582
+  },
+  {
+    "id": "p_166",
+    "smiles": "C=CCOC(F)(F)C(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_167",
+    "smiles": "FC(F)C(F)(F)OCC1CO1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_168",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 27.28760398199918
+  },
+  {
+    "id": "p_169",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_170",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)CO",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 45.34134821811936
+  },
+  {
+    "id": "p_171",
+    "smiles": "O.O.O=C(CC(=O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_172",
+    "smiles": "OC(C(F)(F)F)(C(F)(F)F)C(O)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_173",
+    "smiles": "O=C(OS(=O)(=O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 1.6391654166098455
+  },
+  {
+    "id": "p_174",
+    "smiles": "FC(F)OCC(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.914663880181122
+  },
+  {
+    "id": "p_175",
+    "smiles": "O=S(=O)(OCC(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.2594759007955076
+  },
+  {
+    "id": "p_176",
+    "smiles": "C=CC(=O)OCC(O)CC(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_177",
+    "smiles": "C=C(C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_178",
+    "smiles": "FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_179",
+    "smiles": "O=C(O)CC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "ketone_reduction",
+    "max_amplification": 13.68787020345094
+  },
+  {
+    "id": "p_180",
+    "smiles": "C=CCOCC(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 6.741890959282263
+  },
+  {
+    "id": "p_181",
+    "smiles": "FC(F)(F)COB(OCC(F)(F)F)OCC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 14.482476476203464
+  },
+  {
+    "id": "p_182",
+    "smiles": "NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 999,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 42.24852071005917
+  },
+  {
+    "id": "p_183",
+    "smiles": "C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_184",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)OC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.5381079119283814
+  },
+  {
+    "id": "p_185",
+    "smiles": "O=C(OC(=O)C(F)(F)C(F)F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 19.004677754677758
+  },
+  {
+    "id": "p_186",
+    "smiles": "FC(F)C(F)(F)COCC(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_187",
+    "smiles": "COCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.004476275738585
+  },
+  {
+    "id": "p_188",
+    "smiles": "O=C1OC(=O)C(F)(F)C1(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_189",
+    "smiles": "OCCOC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 165.37396121883657
+  },
+  {
+    "id": "p_190",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)OC(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_191",
+    "smiles": "OCCC(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 87.31563421828909
+  },
+  {
+    "id": "p_192",
+    "smiles": "FC(F)(F)C(F)(Br)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_193",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_194",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_195",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)OC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 15.698040164529395
+  },
+  {
+    "id": "p_196",
+    "smiles": "O=C(NCC(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 256.72371638141806
+  },
+  {
+    "id": "p_197",
+    "smiles": "CC(C)(O)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.095907147220525
+  },
+  {
+    "id": "p_198",
+    "smiles": "FC(F)(F)C(F)(C(F)(F)F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 18,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_199",
+    "smiles": "FC(F)(F)C(F)(CCI)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_200",
+    "smiles": "NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 3.094231555979817
+  },
+  {
+    "id": "p_201",
+    "smiles": "O=S(=O)(OCC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_202",
+    "smiles": "CC=CC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_203",
+    "smiles": "OC(O)(C(F)C(O)(O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_204",
+    "smiles": "O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 5.87746049348489
+  },
+  {
+    "id": "p_205",
+    "smiles": "FC(CC(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_206",
+    "smiles": "N=C(N)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 32,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_207",
+    "smiles": "C[Si](C)(C)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_208",
+    "smiles": "NC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 5,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_209",
+    "smiles": "COC(F)(C(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.341610233258089
+  },
+  {
+    "id": "p_210",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_211",
+    "smiles": "FC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_212",
+    "smiles": "C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_213",
+    "smiles": "OCCCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 61.35732533599912
+  },
+  {
+    "id": "p_214",
+    "smiles": "O=C(OC(=O)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 10.827958126255684
+  },
+  {
+    "id": "p_215",
+    "smiles": "CC(O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 14.653573376977633
+  },
+  {
+    "id": "p_216",
+    "smiles": "FC(=C(F)C(F)(C(F)(F)F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 7,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_217",
+    "smiles": "NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_218",
+    "smiles": "O=C1OC(F)(C(F)(F)F)C(F)(F)OC1(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_219",
+    "smiles": "FC(F)C(F)(F)COCC1CO1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_220",
+    "smiles": "COC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.341610233258089
+  },
+  {
+    "id": "p_221",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_222",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_223",
+    "smiles": "NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_224",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_225",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_226",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_227",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(Cl)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_228",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_229",
+    "smiles": "O=C([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[NH4+]",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_230",
+    "smiles": "O=C(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 9.436716077537058
+  },
+  {
+    "id": "p_231",
+    "smiles": "FC(F)(F)C1(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(C(F)(F)F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_232",
+    "smiles": "O=C(O)CCC(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 135.6043956043956
+  },
+  {
+    "id": "p_233",
+    "smiles": "NC(O)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 2,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_234",
+    "smiles": "O=C(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_235",
+    "smiles": "O=C(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 13.467511885895403
+  },
+  {
+    "id": "p_236",
+    "smiles": "FCOC(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.7731750442030814
+  },
+  {
+    "id": "p_237",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_238",
+    "smiles": "FC(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_239",
+    "smiles": "OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 66.63059163059162
+  },
+  {
+    "id": "p_240",
+    "smiles": "O=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 999,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_241",
+    "smiles": "CC(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_242",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_243",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(=O)O",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_244",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(=O)O",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_245",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_246",
+    "smiles": "FC(F)(F)C(F)(F)CCI",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_247",
+    "smiles": "FC(F)C(F)(F)OCC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.2551305970149251
+  },
+  {
+    "id": "p_248",
+    "smiles": "FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_249",
+    "smiles": "C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C=C",
+    "parent_type": "Other",
+    "risky_paths": 217,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_250",
+    "smiles": "O=C(NCc1ccccc1)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "amide_hydrolysis",
+    "max_amplification": 3.707613563659629
+  },
+  {
+    "id": "p_251",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_252",
+    "smiles": "C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_253",
+    "smiles": "O=C(C=C(O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 96,
+    "primary_peak_rxn": "ketone_reduction",
+    "max_amplification": 1.8457085828343316
+  },
+  {
+    "id": "p_254",
+    "smiles": "CC(=O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 34.86088379705401
+  },
+  {
+    "id": "p_255",
+    "smiles": "O=C(O)CCC(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 5.185337726523888
+  },
+  {
+    "id": "p_256",
+    "smiles": "C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C=C",
+    "parent_type": "Other",
+    "risky_paths": 217,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_257",
+    "smiles": "FC(F)(F)C(C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_258",
+    "smiles": "OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 7.310879915358843
+  },
+  {
+    "id": "p_259",
+    "smiles": "CCOC(=O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 2.080196975026381
+  },
+  {
+    "id": "p_260",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_261",
+    "smiles": "O=C(Cl)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 999,
+    "primary_peak_rxn": "halogen_reduction",
+    "max_amplification": 9.94949494949495
+  },
+  {
+    "id": "p_262",
+    "smiles": "OC(O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 999,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 31.34441087613293
+  },
+  {
+    "id": "p_263",
+    "smiles": "O=C(NOC(=O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "amide_hydrolysis",
+    "max_amplification": 1316.0291438979964
+  },
+  {
+    "id": "p_264",
+    "smiles": "COC(F)(F)C(F)OC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 11.693950177935942
+  },
+  {
+    "id": "p_265",
+    "smiles": "O=C(O)C(F)(F)C(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 339.0739695087521
+  },
+  {
+    "id": "p_266",
+    "smiles": "CC(C)C(=O)OC(C(F)(F)F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_267",
+    "smiles": "FC(F)(Br)C(F)(F)CCBr",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_268",
+    "smiles": "O=C(CC(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 12.864157119476268
+  },
+  {
+    "id": "p_269",
+    "smiles": "O=C(OC(=O)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "aldehyde_to_acid",
+    "max_amplification": 26.18300831855993
+  },
+  {
+    "id": "p_270",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_271",
+    "smiles": "FC(F)(F)C(F)(Cl)C(F)(Cl)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_272",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_273",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_274",
+    "smiles": "O=S(=O)(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "PFSA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 342700479.7806717
+  },
+  {
+    "id": "p_275",
+    "smiles": "C[Si](Cl)(Cl)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_276",
+    "smiles": "C[Si](C)(C)OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_277",
+    "smiles": "OCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)CO",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 2.195172059578839
+  },
+  {
+    "id": "p_278",
+    "smiles": "O=C(O)C(F)(F)C(F)(Cl)C(F)(F)C(F)(Cl)C(F)(F)C(F)(Cl)C(F)(F)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_279",
+    "smiles": "O=C(O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 13.93011305241521
+  },
+  {
+    "id": "p_280",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_281",
+    "smiles": "C[Si](C)(Cl)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_282",
+    "smiles": "CCNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Sulfonamide",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_283",
+    "smiles": "O=C(O)CCC(F)(C(F)(F)F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "dehydrofluorination",
+    "max_amplification": 8.291492329149234
+  },
+  {
+    "id": "p_284",
+    "smiles": "NCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_285",
+    "smiles": "OCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 2.820424948594928
+  },
+  {
+    "id": "p_286",
+    "smiles": "OCC(O)CC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 84.16798732171156
+  },
+  {
+    "id": "p_287",
+    "smiles": "CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Sulfonamide",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_288",
+    "smiles": "C=CC(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_289",
+    "smiles": "CCO[Si](CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)(OCC)OCC",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_290",
+    "smiles": "O=P(O)(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "phosphonic_acid_hydrolysis",
+    "max_amplification": 3181.015452538631
+  },
+  {
+    "id": "p_291",
+    "smiles": "FC(F)(Br)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_292",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CCS",
+    "parent_type": "Unknown",
+    "risky_paths": 0,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_293",
+    "smiles": "O=C(O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(=O)O",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 115.4816513761468
+  },
+  {
+    "id": "p_294",
+    "smiles": "FC(F)C(F)(F)OCC(F)(F)C(F)(F)C(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_295",
+    "smiles": "OCC(I)CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_296",
+    "smiles": "CCCCCCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_297",
+    "smiles": "O=C(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_298",
+    "smiles": "CC(=O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.4539559014267185
+  },
+  {
+    "id": "p_299",
+    "smiles": "O=S(=O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_300",
+    "smiles": "O=C(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 13.834745762711863
+  },
+  {
+    "id": "p_301",
+    "smiles": "CCN(CC)C(F)(F)C(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_302",
+    "smiles": "CCOC(=O)CC(=O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 3.297966963151207
+  },
+  {
+    "id": "p_303",
+    "smiles": "CC(C)(C)C(=O)CC(=O)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_304",
+    "smiles": "O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "PFSA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "desulfonation",
+    "max_amplification": 186497.5755315181
+  },
+  {
+    "id": "p_305",
+    "smiles": "O=S(=O)([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[K+]",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "desulfonation",
+    "max_amplification": 4230.1184433164135
+  },
+  {
+    "id": "p_306",
+    "smiles": "OCCCC(F)(C(F)(F)F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 5.492957746478873
+  },
+  {
+    "id": "p_307",
+    "smiles": "CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_308",
+    "smiles": "O=C(O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 14.910438542310068
+  },
+  {
+    "id": "p_309",
+    "smiles": "OCC(F)(OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 2.733176979974743
+  },
+  {
+    "id": "p_310",
+    "smiles": "NS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Sulfonamide",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_311",
+    "smiles": "O=S(=O)(F)C(F)(F)C(F)(F)OC(F)(C(F)(F)F)C(F)(F)OC(F)=C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_312",
+    "smiles": "C=C(C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_313",
+    "smiles": "O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_314",
+    "smiles": "O=P(O)(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "phosphonic_acid_hydrolysis",
+    "max_amplification": 2491901320.7077
+  },
+  {
+    "id": "p_315",
+    "smiles": "CC(C)(C)C(=O)CC(=O)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_316",
+    "smiles": "O=S(=O)(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "PFSA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 7605.388272583201
+  },
+  {
+    "id": "p_317",
+    "smiles": "O=S(=O)(OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_318",
+    "smiles": "CO[Si](C)(CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)OC",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "silane_hydrolysis",
+    "max_amplification": 27.016783974011908
+  },
+  {
+    "id": "p_319",
+    "smiles": "COC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_320",
+    "smiles": "CN(C(=O)C(F)(F)C(F)(F)C(F)(F)F)[Si](C)(C)C",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.8791460619949345
+  },
+  {
+    "id": "p_321",
+    "smiles": "OCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 2.743122102009273
+  },
+  {
+    "id": "p_322",
+    "smiles": "OCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 4.388059701492537
+  },
+  {
+    "id": "p_323",
+    "smiles": "OCc1ccc(OCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F)cc1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 6.904090267983075
+  },
+  {
+    "id": "p_324",
+    "smiles": "NCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_325",
+    "smiles": "O=C(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTCA/FTUCA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 14.527073337902674
+  },
+  {
+    "id": "p_326",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CC[Si](Cl)(Cl)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_327",
+    "smiles": "O=S(=O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_328",
+    "smiles": "FC(F)(I)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_329",
+    "smiles": "FC(F)(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_330",
+    "smiles": "O=C(O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 13.772770853307769
+  },
+  {
+    "id": "p_331",
+    "smiles": "O=S(=O)(O)C(F)(F)C(F)(F)OC(F)(F)C(F)(F)F",
+    "parent_type": "PFSA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 53.24727481353988
+  },
+  {
+    "id": "p_332",
+    "smiles": "OCCCCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_333",
+    "smiles": "NCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_334",
+    "smiles": "O=C(O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 14.083673756867164
+  },
+  {
+    "id": "p_335",
+    "smiles": "OCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 2.7738271604938274
+  },
+  {
+    "id": "p_336",
+    "smiles": "COC(=O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_337",
+    "smiles": "OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_338",
+    "smiles": "NS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Sulfonamide",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_339",
+    "smiles": "CC12CCC(C(C(=O)C(F)(F)C(F)(F)C(F)(F)F)C1=O)C2(C)C",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_340",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_341",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_342",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)C(F)(F)COC(=O)C=C",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_343",
+    "smiles": "NCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_344",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_345",
+    "smiles": "C=CC(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_346",
+    "smiles": "FC(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_347",
+    "smiles": "COC(=O)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_348",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CC1CO1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_acid",
+    "max_amplification": 1.8705422569614072
+  },
+  {
+    "id": "p_349",
+    "smiles": "FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_350",
+    "smiles": "FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_351",
+    "smiles": "NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_352",
+    "smiles": "C=C(C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_353",
+    "smiles": "CCN(CCO)S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Sulfonamide",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_354",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_355",
+    "smiles": "OCCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 1.6169133192389007
+  },
+  {
+    "id": "p_356",
+    "smiles": "NCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1.107988165680473
+  },
+  {
+    "id": "p_357",
+    "smiles": "OCCCC(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 17.118184896715203
+  },
+  {
+    "id": "p_358",
+    "smiles": "OCC(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 10.412451361867705
+  },
+  {
+    "id": "p_359",
+    "smiles": "FC(F)C(F)(F)COC(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_360",
+    "smiles": "O=S(=O)(OCC(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_361",
+    "smiles": "O=C(O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(=O)O",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 119.6712891628146
+  },
+  {
+    "id": "p_362",
+    "smiles": "O=S(=O)(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "PFSA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 7189072.609633357
+  },
+  {
+    "id": "p_363",
+    "smiles": "O=C(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 2.004967520061139
+  },
+  {
+    "id": "p_364",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C1(F)OC(F)(F)C(F)(F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_365",
+    "smiles": "O=P(O)(O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "phosphate_ester_hydrolysis",
+    "max_amplification": 1.501550606146039
+  },
+  {
+    "id": "p_366",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)CCI",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_367",
+    "smiles": "O=S(=O)([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[Na+]",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "desulfonation",
+    "max_amplification": 8726003.490401395
+  },
+  {
+    "id": "p_368",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_369",
+    "smiles": "O=C(O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 13.59291210072278
+  },
+  {
+    "id": "p_370",
+    "smiles": "CN(CCO)S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Sulfonamide",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_371",
+    "smiles": "OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "FTOH",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_372",
+    "smiles": "O=C(CC(=O)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 2.1427009294696555
+  },
+  {
+    "id": "p_373",
+    "smiles": "OCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 2.718907260963336
+  },
+  {
+    "id": "p_374",
+    "smiles": "O=C(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 14.11214953271028
+  },
+  {
+    "id": "p_375",
+    "smiles": "OCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)CO",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 34.05980739989863
+  },
+  {
+    "id": "p_376",
+    "smiles": "O=S(=O)(OCC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_377",
+    "smiles": "O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "PFSA",
+    "risky_paths": 999,
+    "primary_peak_rxn": "reductive_defluorination",
+    "max_amplification": 1155.4015020219526
+  },
+  {
+    "id": "p_378",
+    "smiles": "Oc1ccc(SCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)cc1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_379",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_380",
+    "smiles": "FC(F)(F)N1C(F)(F)C(F)(F)OC(F)(F)C1(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_381",
+    "smiles": "O=C(CC(=O)C(F)(F)C(F)(F)C(F)(F)F)c1cccs1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_382",
+    "smiles": "CN(C)CCCNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Sulfonamide",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_383",
+    "smiles": "O=C(O)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 14.645999162128197
+  },
+  {
+    "id": "p_384",
+    "smiles": "CC(I)CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_385",
+    "smiles": "O=S(=O)([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "desulfonation",
+    "max_amplification": 186497.5755315181
+  },
+  {
+    "id": "p_386",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_387",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_388",
+    "smiles": "CO[Si](CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)(OC)OC",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "silane_hydrolysis",
+    "max_amplification": 6.541209084124107
+  },
+  {
+    "id": "p_389",
+    "smiles": "O=S(=O)(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_390",
+    "smiles": "O=C(CC(=O)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_391",
+    "smiles": "OCC(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 2.705035971223021
+  },
+  {
+    "id": "p_392",
+    "smiles": "O=S(=O)([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[K+]",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "desulfonation",
+    "max_amplification": 186497.5755315181
+  },
+  {
+    "id": "p_393",
+    "smiles": "C=CC(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)(F)COC(=O)C=C",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_394",
+    "smiles": "O=C(O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "decarboxylation",
+    "max_amplification": 14.21020092735703
+  },
+  {
+    "id": "p_395",
+    "smiles": "CC(=O)OCCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_396",
+    "smiles": "CNC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_397",
+    "smiles": "COC(=O)C(F)(F)C(F)(F)OC(F)(C(F)(F)F)C(F)(F)OC(F)=C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_398",
+    "smiles": "C[N+](C)(C)CCCNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F.[I-]",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "desulfonation",
+    "max_amplification": 186497.5755315181
+  },
+  {
+    "id": "p_399",
+    "smiles": "FC(F)C(F)(F)OCCOC(F)(F)C(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 16.639970877320714
+  },
+  {
+    "id": "p_400",
+    "smiles": "O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "PFSA",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "desulfonation",
+    "max_amplification": 27824.15136338342
+  },
+  {
+    "id": "p_401",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_402",
+    "smiles": "C=C(C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_403",
+    "smiles": "C=C(C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_404",
+    "smiles": "OCC(O)CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 90.54146675805346
+  },
+  {
+    "id": "p_405",
+    "smiles": "O=C(CC(=O)C(F)(F)C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxy_acid_decarboxylation",
+    "max_amplification": 1.492439722108705
+  },
+  {
+    "id": "p_406",
+    "smiles": "FC(F)(I)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_407",
+    "smiles": "O=S(=O)(Cl)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_408",
+    "smiles": "O=C(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 14.335802469135803
+  },
+  {
+    "id": "p_409",
+    "smiles": "O=C(Cl)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 8.224811514736121
+  },
+  {
+    "id": "p_410",
+    "smiles": "O=P(O)(O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "phosphate_ester_hydrolysis",
+    "max_amplification": 1.5621521335807051
+  },
+  {
+    "id": "p_411",
+    "smiles": "OCc1ccc(CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)cc1",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alcohol_to_aldehyde",
+    "max_amplification": 6.895886889460154
+  },
+  {
+    "id": "p_412",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)N(C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_413",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)Br",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_414",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CCI",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_415",
+    "smiles": "CCC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "alpha_hydroxylation",
+    "max_amplification": 15.55084745762712
+  },
+  {
+    "id": "p_416",
+    "smiles": "CCOC(F)(C(F)(F)C(F)(F)C(F)(F)F)C(F)(C(F)(F)F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_417",
+    "smiles": "FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CCI",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_418",
+    "smiles": "O=C(O)C(F)(F)C(F)(Cl)C(F)(F)C(F)(Cl)C(F)(F)Cl",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_419",
+    "smiles": "O=S(=O)(F)C(F)(F)C(F)(F)OC(F)(F)C(F)(F)I",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  },
+  {
+    "id": "p_420",
+    "smiles": "CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+    "parent_type": "Other",
+    "risky_paths": 1000,
+    "primary_peak_rxn": "None",
+    "max_amplification": 1.0
+  }
+]
