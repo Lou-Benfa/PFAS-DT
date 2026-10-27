@@ -49,9 +49,12 @@
   
   /* 搜索建议下拉 */
   .suggest-list { position: absolute; top: 68px; left: 0; right: 0; background: #FFF; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); z-index: 50; list-style: none; }
-  .suggest-list li { padding: 12px 20px; display: flex; justify-content: space-between; cursor: pointer; font-size: 14px; }
+  .suggest-list li { padding: 12px 20px; display: flex; flex-direction: column; gap: 4px; cursor: pointer; border-bottom: 1px solid #F0F4F8; }
+  .suggest-list li:last-child { border-bottom: none; }
   .suggest-list li:hover { background: #F0F7FA; }
-  .suggest-list li span { color: var(--gray); font-size: 13px; }
+  .suggest-list li .s-title { font-weight: 600; font-size: 14px; color: var(--ink); }
+  .suggest-list li .s-sub { font-size: 12px; color: var(--gray); }
+  .suggest-list li .s-smiles { font-family: monospace; font-size: 11px; color: #94A3B8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
 
   /* 结果区 */
   .result-container { max-width: 1200px; margin: 0 auto; padding: 20px 24px 80px; }
@@ -131,9 +134,9 @@
   <section id="view-tool">
     <div class="tool-header">
       <h1>输入污染物进行预测</h1>
-      <p>支持名称、CAS 号，输入时会自动提示</p>
+      <p>支持名称、CAS 号或 SMILES 结构式</p>
       <div class="search-container">
-        <input type="text" id="search-input" placeholder="例如：PFOA / 335-67-1" autocomplete="off">
+        <input type="text" id="search-input" placeholder="例如：PFOA / 335-67-1 / C8HF15O2" autocomplete="off">
         <button id="search-btn">预测</button>
         <ul class="suggest-list" id="suggest-list" hidden></ul>
       </div>
@@ -144,21 +147,21 @@
 
 <script>
 const $ = s => document.querySelector(s);
-let INDEX_DATA = []; // 存储极小的索引数据
+let INDEX_DATA = [];
 
-// 1. 页面加载时，仅获取 search_index.json
+// 1. 页面加载时，获取 search_index.json
 async function loadIndex() {
   try {
-    const res = await fetch('./search_index.json'); // 已修改为你的文件名
+    const res = await fetch('./search_index.json');
     if (!res.ok) throw new Error('无法加载 search_index.json');
     INDEX_DATA = await res.json();
   } catch (err) {
     console.error(err);
-    alert('系统初始化失败：请确保 search_index.json 文件已正确上传，且格式合法。');
+    alert('系统初始化失败：请确保 search_index.json 文件已正确上传。');
   }
 }
 
-// 2. 搜索建议：从主索引中过滤
+// 2. 搜索建议：包含 name, cas, cn 以及 SMILES
 function showSuggestions(query) {
   const listEl = $('#suggest-list');
   const q = query.trim().toLowerCase();
@@ -167,28 +170,33 @@ function showSuggestions(query) {
   const matches = INDEX_DATA.filter(item => 
     (item.name && item.name.toLowerCase().includes(q)) || 
     (item.cas && item.cas.includes(q)) ||
-    (item.cn && item.cn.includes(q))
-  ).slice(0, 8); // 最多显示8条
+    (item.cn && item.cn.includes(q)) ||
+    (item.smiles && item.smiles.toLowerCase().includes(q)) // 新增 SMILES 匹配
+  ).slice(0, 10); // 最多显示10条
 
   if (matches.length === 0) { listEl.hidden = true; return; }
 
+  // 用 dataset 传递 id，避免特殊字符导致 onclick 报错
   listEl.innerHTML = matches.map(item => `
-    <li onclick="handleSelect('${item.id}')">
-      <strong>${item.name}</strong>
-      <span>${item.cn || ''} | ${item.cas || ''}</span>
+    <li data-id="${item.id}">
+      <div class="s-title">${item.name} <span style="font-weight:normal;color:#5B6770">${item.cn || ''}</span></div>
+      <div class="s-sub">CAS: ${item.cas || '-'} | 分子式: ${item.formula || '-'}</div>
+      <div class="s-smiles">SMILES: ${item.smiles || '-'}</div>
     </li>
   `).join('');
   listEl.hidden = false;
+
+  // 重新绑定点击事件
+  listEl.querySelectorAll('li').forEach(li => {
+    li.addEventListener('click', () => {
+      $('#suggest-list').hidden = true;
+      $('#search-input').value = '';
+      fetchDetail(li.dataset.id);
+    });
+  });
 }
 
-// 3. 点击建议项
-window.handleSelect = function(id) {
-  $('#suggest-list').hidden = true;
-  $('#search-input').value = '';
-  fetchDetail(id);
-}
-
-// 4. 按需加载具体数据
+// 3. 按需加载具体数据
 async function fetchDetail(id) {
   const container = $('#result-container');
   container.hidden = false;
@@ -196,7 +204,6 @@ async function fetchDetail(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
   try {
-    // 请求单条数据文件： data/pfoa.json
     const res = await fetch(`./data/${id}.json`);
     if (!res.ok) throw new Error('数据不存在');
     const comp = await res.json();
@@ -212,11 +219,12 @@ function predict() {
   if (!q) return;
   $('#suggest-list').hidden = true;
   
-  // 在大索引中找精确匹配
+  // 精确匹配逻辑，加入 SMILES
   const match = INDEX_DATA.find(item => 
     (item.name && item.name.toLowerCase() === q.toLowerCase()) || 
     (item.cas && item.cas === q) ||
-    (item.id && item.id === q)
+    (item.id && item.id === q) ||
+    (item.smiles && item.smiles.toLowerCase() === q.toLowerCase()) // 新增 SMILES 匹配
   );
 
   if (match) {
@@ -333,7 +341,7 @@ window.addEventListener('hashchange', () => {
 $('#search-input').addEventListener('input', e => showSuggestions(e.target.value));
 $('#search-input').addEventListener('keydown', e => { if (e.key === 'Enter') predict(); });
 $('#search-btn').addEventListener('click', predict);
-document.addEventListener('click', e => { if (!e.target.search-container) $('#suggest-list').hidden = true; });
+document.addEventListener('click', e => { if (!e.target.closest('.search-container')) $('#suggest-list').hidden = true; });
 
 // 初始化
 loadIndex();
